@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
 li,
 a,
 button {
@@ -19,7 +24,7 @@ button {
 div.header-bgn {
     background-color: rgba(0, 53, 128, 1);
     display: block;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 100%;
     height: 50px;
     position: fixed;
@@ -79,4 +84,41 @@ ul.navlinks li a:hover {
     border: 0.3em solid transparent;
     border-image: linear-gradient(90deg, #ff8a00, #e52e71);
     border-image-slice: 1;
+}
+
+.deneme:hover {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-box-decoration-break: clone;
+}
+
+
+img.hero {
+    max-width: 100%;
+}
+
+main {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+p,
+figure {
+    margin: 0 0 15px 0;
+}
+
+figcaption {
+    text-align: center;
+    color: #999;
 }
